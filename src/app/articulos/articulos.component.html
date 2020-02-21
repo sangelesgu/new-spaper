@@ -1,0 +1,13 @@
+
+<app-navbar></app-navbar>
+
+<div class="card text-left container-fluid" style="width: auto;">
+  <img src="{{_data.listArticles[indice].urlToImage}}">
+  <div class="card-body">
+    <h5 class="card-title">{{_data.listArticles[indice].title}}</h5>
+    <p class="card-text">{{_data.listArticles[indice].description}}</p>
+   <a href="{{_data.listArticles[indice].url}}"><button type="button" class="btn btn-success">Read more</button></a>
+  </div>
+</div>
+
+<app-footer></app-footer>
