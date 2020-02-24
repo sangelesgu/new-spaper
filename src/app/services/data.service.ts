@@ -21,14 +21,14 @@ export class DataService {
   }
 
     newsUs(){
-      this._http.get("http://newsapi.org/v2/top-headlines?country=us&apiKey=1788926d5ee4414191b90f5808002230")
+      this._http.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=1788926d5ee4414191b90f5808002230")
         .subscribe((responseApi) => {
           this.listArticles = responseApi["articles"];
         });
     }
 
     newsCategory(category:string){
-      this._http.get("http://newsapi.org/v2/top-headlines?country=us&category="+category+"&apiKey=1788926d5ee4414191b90f5808002230")
+      this._http.get("https://newsapi.org/v2/top-headlines?country=us&category="+category+"&apiKey=1788926d5ee4414191b90f5808002230")
         .subscribe((responseApi) => {
           this.listArticlesCategory = responseApi["articles"];
         });
